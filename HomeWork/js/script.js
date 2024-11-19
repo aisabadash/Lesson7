@@ -5,48 +5,48 @@
 // sum() повертає суму цих властивостей.
 // mul() повертає результат множення даних властивостей.
 
-function Calculator() {
-   this.a = null;
-   this.b = null;
+// function Calculator() {
+//    this.a = null;
+//    this.b = null;
 
-   this.readNumber = function() {
-      let result = prompt(`Введіть число:`, 0);
+//    this.readNumber = function() {
+//       let result = prompt(`Введіть число:`, 0);
       
-      if (result === null) return;
+//       if (result === null) return;
       
-      if ((result.trim() === "") || (isNaN(Number(result)))) {
-         alert(`Невірно введено число!`);
-         return;
-      }
-      return Number(result);      
-   }
+//       if ((result.trim() === "") || (isNaN(Number(result)))) {
+//          alert(`Невірно введено число!`);
+//          return;
+//       }
+//       return Number(result);      
+//    }
 
-   this.read = function() {
-      this.a = this.readNumber();
-      if(this.a === undefined) return;  
-      console.log(`a = ${this.a}`);
+//    this.read = function() {
+//       this.a = this.readNumber();
+//       if(this.a === undefined) return;  
+//       console.log(`a = ${this.a}`);
 
-      this.b = this.readNumber();
-      if(this.b === undefined) return;  
-      console.log(`b = ${this.b}`);
+//       this.b = this.readNumber();
+//       if(this.b === undefined) return;  
+//       console.log(`b = ${this.b}`);
 
-      return true;  
-   }
+//       return true;  
+//    }
 
-   this.sum = function() {
-      let result = this.a + this.b;
-      return `Sum = ${result}`;
-   }
+//    this.sum = function() {
+//       let result = this.a + this.b;
+//       return `Sum = ${result}`;
+//    }
 
-   this.mul = function() {
-      let result = this.a * this.b;
-      return `Mul = ${result}`;
-   }
-}
+//    this.mul = function() {
+//       let result = this.a * this.b;
+//       return `Mul = ${result}`;
+//    }
+// }
 
-const obj = new Calculator();
+// const obj = new Calculator();
 
-if( obj.read()) {
-   console.log(obj.sum());
-   console.log(obj.mul());
-}
+// if( obj.read()) {
+//    console.log(obj.sum());
+//    console.log(obj.mul());
+// }
