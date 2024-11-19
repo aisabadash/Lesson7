@@ -40,6 +40,10 @@
 //   size: 30,
 // });
 
+// CircleBlack.hide();
+
+/* ************************ */
+
 // function Car(name, color) {
 //   this.name = name;
 //   this.color = color;
